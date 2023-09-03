@@ -1,0 +1,29 @@
+teste = 1
+while teste !=0:
+    dia = int(input('Digite o dia do seu nascimento: '))
+    mes = int(input('Digite o mes do seu nascimento: '))
+    if (dia >= 21 and mes == 3) or (dia <= 20 and mes == 4):
+        print('Aries')
+    elif (dia >= 21 and mes == 4) or (dia <= 20 and mes == 5):
+        print('Touro')
+    elif (dia >= 21 and mes == 5) or (dia <= 20 and mes == 6):
+        print('Gemeos')
+    elif (dia >= 21 and mes == 6) or (dia <= 22 and mes == 7):
+        print('Cancer')
+    elif (dia >= 23 and mes == 7) or (dia <= 22 and mes == 8):
+        print('Leão')
+    elif (dia >= 23 and mes == 8) or (dia <= 22 and mes == 9):
+        print('Virgem')
+    elif (dia >= 23 and mes == 9) or (dia <= 22 and mes == 10):
+        print('Libra')
+    elif (dia >= 23 and mes == 10) or (dia <= 21 and mes == 11):
+        print('Escorpiao')
+    elif (dia >= 22 and mes == 11) or (dia <= 21 and mes == 12):
+        print('Sargitario')
+    elif (dia >= 22 and mes == 12) or (dia <= 19 and mes == 1):
+        print('Capricornio')
+    elif (dia >= 21 and mes == 1) or (dia <= 18 and mes == 2):
+        print('Aquario')
+    else:
+        print('Peixe')
+
