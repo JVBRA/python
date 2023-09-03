@@ -32,13 +32,22 @@ while teste !=0:
         resultado = u + d + c + m + mm
         print('Resultado em Decimal:', resultado)
     elif funcao ==2:
-        u = (first // 1 % 10) * 1
-        d = (first // 10 % 10) * 8
-        c = (first // 100 % 10) * 64
-        m = (first // 1000 % 10) * 512
-        mm = (first // 10000 % 10) * 4096
-        resultado = u + d + c + m + mm
-        print('Resultado em Decimal:', resultado)
+        u = (first // 1 % 10) 
+        d = (first // 10 % 10)
+        c = (first // 100 % 10)
+        m = (first // 1000 % 10)
+        mm = (first // 10000 % 10)
+        if u>=8 or d>=8 or c>=8 or mm>=8 or m>=8:
+            print('Este numero não e uma base octal!\n'
+                  'tente novamente!')
+        else:
+            un = u * 1
+            de = d * 8
+            cn = c * 64
+            me = m * 512
+            mmn = mm * 4096
+            resultado = un + de + cn + me + mmn
+            print('Resultado em Decimal:', resultado)
     elif funcao ==3:
         print("A string digitada: " + str(secund)) 
         res = int(secund, 16) 
@@ -46,24 +55,39 @@ while teste !=0:
     elif funcao == 4 or funcao==9:
         h = bin(first)
         print(f'Resultado em Binario:{h}')
-    elif funcao == 51:
+    elif funcao == 5:
         h = oct(first)
         print(f'Resultado em Octal:{h}')
     elif funcao == 6:
         h = hex(first)
         print(f'Resultado em Hexadecimal:{h}')
     elif funcao == 7:
-        b = bin(first)
-        h = hex(b)
+        h = hex(first)
         print(f'Resultado em Hexadecimal:{h}')
     elif funcao == 8:
-        b = oct(first)
-        h = hex(b)
-        print(f'Resultado em Hexadecimal:{h}')
-    elif funcao == 7:
-        b = oct(first)
-        h = bin(b)
-        print(f'Resultado em Binario:{h}')
+        u = (first // 1 % 10) 
+        d = (first // 10 % 10)
+        c = (first // 100 % 10)
+        m = (first // 1000 % 10)
+        mm = (first // 10000 % 10)
+        if u>=8 or d>=8 or c>=8 or mm>=8 or m>=8:
+            print('Este numero não e uma base octal!\n'
+                  'tente novamente!')
+        else:
+            h = hex(first)
+            print(f'Resultado em Hexadecimal:{h}')
+    elif funcao == 9:
+        u = (first // 1 % 10) 
+        d = (first // 10 % 10)
+        c = (first // 100 % 10)
+        m = (first // 1000 % 10)
+        mm = (first // 10000 % 10)
+        if u>=8 or d>=8 or c>=8 or mm>=8 or m>=8:
+            print('Este numero não e uma base octal!\n'
+                  'tente novamente!')
+        else:
+            h = bin(first)
+            print(f'Resultado em Binario:{h}')
     elif funcao ==10:
         print("A string digitada: " + str(secund)) 
         res = int(secund, 16) 
